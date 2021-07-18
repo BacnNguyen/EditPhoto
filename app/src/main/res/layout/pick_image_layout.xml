@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@drawable/img"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose your image to start"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:id="@+id/title_pick"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick Image"
+            android:id="@+id/btn_pick"
+            android:background="#fff"
+            android:layout_below="@+id/title_pick"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_pick"
+            android:background="#fff"
+            android:id="@+id/img_pick"
+            android:src="@drawable/image_display"
+            android:layout_above="@+id/btn_letgo"
+            android:layout_margin="10dp"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Let's go"
+            android:id="@+id/btn_letgo"
+            android:background="@drawable/backdground"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"/>
+    </RelativeLayout>
+</layout>

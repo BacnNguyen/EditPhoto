@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="listener"
+            type="com.example.editphoto.event_listener.SelectListener" />
+    </data>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img">
+
+        <Button
+            android:onClick="@{v->listener.onPickImageListener()}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/backdground"
+            android:padding="20dp"
+            android:text="Pick an image"
+            android:id="@+id/pick"
+            android:textSize="20dp"/>
+
+        <Button
+            android:onClick="@{v->listener.onTakeImageListener()}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/backdground"
+            android:padding="20dp"
+            android:layout_below="@+id/pick"
+            android:text="take an image"
+            android:id="@+id/take"
+            android:textSize="20dp"/>
+
+        <Button
+            android:onClick="@{v->listener.onShowEditedImage()}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/backdground"
+            android:padding="20dp"
+            android:text="Edited Image"
+            android:id="@+id/edited"
+            android:layout_below="@+id/take"
+            android:textSize="20dp"/>
+
+        <Button
+            android:onClick="@{v->listener.onHowToUse()}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/backdground"
+            android:padding="20dp"
+            android:text="How to use"
+            android:id="@+id/how_to"
+            android:layout_below="@+id/edited"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EDIT PHOTO"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="60dp"
+            android:layout_above="@+id/slogan"
+            android:shadowColor="#000"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/font1"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/slogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make your photo better"
+            android:textSize="40dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#fff"
+            android:fontFamily="@font/font1"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+</layout>

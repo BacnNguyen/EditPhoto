@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img">
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/font"
+            android:text="Register"
+            android:textColor="#335140"
+            android:textSize="80dp" />
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_name"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/backdground"
+            android:ellipsize="end"
+            android:hint="jonh@gmail.com"
+            android:maxLines="1"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:background="@drawable/backdground"
+            android:hint="Michel John"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:id="@+id/edt_name"
+            android:paddingBottom="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_email"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:inputType="textPassword"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/backdground"
+            android:hint="* * * * * * * * *"
+            android:paddingLeft="20dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:id="@+id/edt_pass"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="30dp"
+            android:fontFamily="@font/font1"
+            android:background="@drawable/backdground"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/edt_pass"
+            android:id="@+id/btn_register"
+            android:layout_marginTop="30dp"/>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_register"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EDIT PHOTO"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="60dp"
+            android:layout_above="@+id/slogan"
+            android:shadowColor="#000"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/font1"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/slogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make your photo better"
+            android:textSize="40dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#fff"
+            android:fontFamily="@font/font1"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_button"
+            android:layout_margin="10dp"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:id="@+id/back"
+            android:layout_alignParentTop="true"/>
+
+    </RelativeLayout>
+</layout>

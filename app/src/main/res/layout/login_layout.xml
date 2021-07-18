@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img">
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/font"
+            android:text="Login"
+            android:textColor="#335140"
+            android:textSize="80dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:background="@drawable/backdground"
+            android:hint="jonh@gmail.com"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:id="@+id/edt_email"
+            android:paddingBottom="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_email"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/backdground"
+            android:hint="* * * * * * * * *"
+            android:paddingLeft="20dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:id="@+id/edt_pass"
+            android:paddingTop="10dp"
+            android:password="true"
+            android:paddingBottom="10dp" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="30dp"
+            android:fontFamily="@font/font1"
+            android:background="@drawable/backdground"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/edt_pass"
+            android:id="@+id/btn_login"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You don't have account"
+            android:textSize="20dp"
+            android:textColor="#0020FF"
+            android:id="@+id/title2"
+            android:layout_below="@+id/btn_login"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="30dp"
+            android:fontFamily="@font/font1"
+            android:background="@drawable/backdground"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/title2"
+            android:id="@+id/btn_register"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EDIT PHOTO"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="60dp"
+            android:layout_above="@+id/slogan"
+            android:shadowColor="#000"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/font1"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/slogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make your photo better"
+            android:textSize="40dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#fff"
+            android:fontFamily="@font/font1"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+</layout>

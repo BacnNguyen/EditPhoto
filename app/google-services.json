@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "248692673983",
+    "firebase_url": "https://editphoto-6a995.firebaseio.com",
+    "project_id": "editphoto-6a995",
+    "storage_bucket": "editphoto-6a995.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248692673983:android:b771c33144acb237af650a",
+        "android_client_info": {
+          "package_name": "com.bac.editphoto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "248692673983-i28fbu5nqjq68r41c2g0hqhhdsabbv4r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQd1c3LCsiEF-ZSIuGN0JQbTVPMncBMDk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "248692673983-i28fbu5nqjq68r41c2g0hqhhdsabbv4r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248692673983:android:3673082ff6e9ee69af650a",
+        "android_client_info": {
+          "package_name": "com.example.editphoto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "248692673983-i28fbu5nqjq68r41c2g0hqhhdsabbv4r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQd1c3LCsiEF-ZSIuGN0JQbTVPMncBMDk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "248692673983-i28fbu5nqjq68r41c2g0hqhhdsabbv4r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

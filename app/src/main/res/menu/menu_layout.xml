@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Undo"
+        android:id="@+id/undo"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_undo_black_24dp"/>
+    <item android:title="Redo"
+        android:id="@+id/redo"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_redo_black_24dp"/>
+    <item app:showAsAction="always"
+        android:icon="@drawable/ic_more_vert_black_24dp"
+        android:title="main" >
+       <menu>
+           <item android:icon="@drawable/ic_brush_black_24dp"
+               android:title="Paint"
+               android:id="@+id/paint"
+               app:showAsAction="never"/>
+           <item android:title="Effect"
+               android:id="@+id/effect"
+               android:icon="@drawable/ic_effect"
+               app:showAsAction="collapseActionView"/>
+           <item android:title="Eraser"
+               android:id="@+id/eraser"
+               android:icon="@drawable/ic_eraser"/>
+           <item android:title="Save"
+               android:id="@+id/save"
+               android:icon="@drawable/ic_save_black_24dp"/>
+       </menu>
+    </item>
+
+</menu>

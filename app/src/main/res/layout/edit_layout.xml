@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#FFFFFF"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:elevation="1dp"
+            android:id="@+id/toolbar"
+            android:background="#39D30E"
+            android:layout_height="wrap_content"/>
+
+        <ja.burhanrashid52.photoeditor.PhotoEditorView
+            android:id="@+id/display"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:background="#E3E3E3" />
+
+        <ScrollView
+            android:layout_marginTop="2px"
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="150dp">
+            <FrameLayout
+                android:id="@+id/frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </ScrollView>
+    </RelativeLayout>
+</layout>
